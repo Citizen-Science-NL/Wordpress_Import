@@ -1,4 +1,4 @@
-# Wordpress_Import
+# Wordpress Import - Minimum Viable Product
 Citizen Science NL requested to have the information of their dutch projects rendered to a already existing wordpress page. 
 The code written to make this work is documented in this repository. It consists of 2 scripts that make simple API calls and render a HTML Template. 
 
