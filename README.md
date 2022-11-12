@@ -96,12 +96,15 @@ Setting up an endpoint for Projects
 ![Schermafbeelding 2022-11-12 om 15 34 26](https://user-images.githubusercontent.com/71013416/201479805-e590bcea-7eef-4183-9165-61cd0c7748c8.png)
 
 Creating the new PHP snippet
-![Schermafbeelding 2022-11-12 om 15 36 50](https://user-images.githubusercontent.com/71013416/2014![Uploading Schermafbeelding 2022-11-12 om 15.36.39.png…]()
-79825-f5bd8039-9983-4af4-9dc0-c51345789d46.png)
+![Schermafbeelding 2022-11-12 om 15 36 50](https://user-images.githubusercontent.com/71013416/201479880-aa0b2aa4-8288-4d68-ac28-3c5be16c1c28.png)
+
+
 
 Finding the wordpress shortcodes for those snippets
+![Schermafbeelding 2022-11-12 om 15 36 39](https://user-images.githubusercontent.com/71013416/201479885-19d244e9-ed27-43ce-a9fb-4bb05fdeaf17.png)
 
  
  Adding the snippet to your page
- 
+ ![Schermafbeelding 2022-11-12 om 15 37 09](https://user-images.githubusercontent.com/71013416/201479889-8d8d91d8-fc7a-48e4-9845-3b83e32c9860.png)
+
 
