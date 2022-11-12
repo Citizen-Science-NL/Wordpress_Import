@@ -17,34 +17,34 @@ In the future it is possible that the project moves away from wordpress and adop
 
 # Installation: 
 ### Prerequesits:
-0. Have a wordpress implementation
-1. From the Wordpress plugin store, download and activat the 2 plugins mentioned above. 
+- Have a wordpress implementation
+- From the Wordpress plugin store, download and activat the 2 plugins mentioned above. 
 
 ### Setting up the GET requests
 This plugin contains all the information to make calls to the external server. 
-2. In WPGetAPI create a new API with the name: eu-citizen.science
-3. uniqueID: eu_citizen_science
-4. base URL: https://eu-citizen.science/api 
-5. Save and move to the tab for that you just created
-6. Create a new endpoint called projects
-7. method: GET
-8 Results format PHP Array Data
-9. query string: name: "country", value: NL  (This ensures we just get dutch projects)
-10. no encoding
-11. Make another endpoint with the same settings only change unique ID and endpoint to 'organisations'. 
-12. Save everything
+- In WPGetAPI create a new API with the name: eu-citizen.science
+- uniqueID: eu_citizen_science
+- base URL: https://eu-citizen.science/api 
+- Save and move to the tab for that you just created
+- Create a new endpoint called projects
+- method: GET
+- Results format PHP Array Data
+- query string: name: "country", value: NL  (This ensures we just get dutch projects)
+- no encoding
+- Make another endpoint with the same settings only change unique ID and endpoint to 'organisations'. 
+- Save everything
 
 ### Setting up the PHP parsing of the fetched data
 This code allows to receive and read the data. And do something for every received item. 
-13. Move to the XYZ PHP Code plugin
-14. Create a new PHP Code Snippet called organisations
-15. In that snippet paste the PHP code of organisations.php and save
-16 do the same for "projects" and copy from the projects.php file. 
-17. in the plugin you should now find 2 Wordpress shortcodes. Save these. 
+- Move to the XYZ PHP Code plugin
+- Create a new PHP Code Snippet called organisations
+- In that snippet paste the PHP code of organisations.php and save
+- do the same for "projects" and copy from the projects.php file. 
+- in the plugin you should now find 2 Wordpress shortcodes. Save these. 
 
 
 ### How to use within Wordpress
-18. On the page where you want to display the fetched data  you paste that wordpress shordcode. 
+- On the page where you want to display the fetched data  you paste that wordpress shordcode. 
 
 # Known limitations
 - We can just render what is in the API (we did some scrubbing to remove HTML tags from the text) -> But the processing is fairly simple. What we get from the API is rendered
