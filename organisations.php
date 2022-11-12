@@ -20,10 +20,11 @@ $data = wpgetapi_endpoint( 'eu_citizen_science', 'organisations', array('debug' 
 
 .card {
   background-color: white;
-  color: black;
+  color: grey;
   min-height: 100%; /*replace this it in width: 100%*/
-  width: 50%;
+  width: 75%;
   float: right;
+padding: 25px 25px;
 }
 
 .card-title {
@@ -88,10 +89,10 @@ div.card-image img {
        <img src="<?php esc_html_e(  $item['logo']); ?>" alt="Organisation logo">
 
       <div class="card">
-        <div class="card-title"><?php esc_html_e(  $item['name']); ?></div>
-        <div class="card-desc">
-          <?php esc_html_e(  strip_tags ($item['description'])); ?>
-        </div>
+        
+        <h1><?php esc_html_e(  $item['name']); ?> </h1>
+        <p><?php esc_html_e(  strip_tags ($item['description'])); ?></p>
+
       </div>
     </div>
   </div>
