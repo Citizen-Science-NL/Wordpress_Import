@@ -1,0 +1,5 @@
+On making the cards: https://stackoverflow.com/questions/63402886/responsive-media-card-image-on-left-text-on-right 
+On making the div clickable: https://css-tricks.com/snippets/jquery/make-entire-div-clickable/ 
+Documentation PHP snippets: https://help.xyzscripts.com/docs/insert-php-code-snippet/
+WPGETAPI docs: https://wpgetapi.com/docs/?utm_campaign=Docs&utm_medium=Admin&utm_source=User
+
