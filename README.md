@@ -87,4 +87,21 @@ This is the snippit of HTML that we render for each item:
 ```
 
 ### Accompanying pictures from the Wordpress interface: 
+
+Creating new API endpoint in Wordpress:
+ ![Schermafbeelding 2022-11-12 om 15 32 19](https://user-images.githubusercontent.com/71013416/201479775-3978f2ce-ac25-48a7-ab06-488ca2e2365a.png)
+
+
+Setting up an endpoint for Projects
+![Schermafbeelding 2022-11-12 om 15 34 26](https://user-images.githubusercontent.com/71013416/201479805-e590bcea-7eef-4183-9165-61cd0c7748c8.png)
+
+Creating the new PHP snippet
+![Schermafbeelding 2022-11-12 om 15 36 50](https://user-images.githubusercontent.com/71013416/2014![Uploading Schermafbeelding 2022-11-12 om 15.36.39.png…]()
+79825-f5bd8039-9983-4af4-9dc0-c51345789d46.png)
+
+Finding the wordpress shortcodes for those snippets
+
  
+ Adding the snippet to your page
+ 
+
