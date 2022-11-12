@@ -113,4 +113,6 @@ Finding the wordpress shortcodes for those snippets
  Adding the snippet to your page
  ![Schermafbeelding 2022-11-12 om 15 37 09](https://user-images.githubusercontent.com/71013416/201479889-8d8d91d8-fc7a-48e4-9845-3b83e32c9860.png)
 
+Renders the items to the page in the same styling as the wordpress theme: 
+![Schermafbeelding 2022-11-12 om 15 37 09](https://user-images.githubusercontent.com/71013416/201480397-5c90de0c-3e38-45d4-8780-129b4a8b6fd7.png)
 
