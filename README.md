@@ -1,17 +1,17 @@
-# Wordpress_Import
-Citizen Science NL requested to have the information of their dutch projects rendered to a already existing wordpress page. 
-The code written to make this work is documented in this repository. It consists of 2 scripts that make simple API calls and render a HTML Template. 
+# Wordpress Import - Minimum Viable Product
+Citizen Science NL wants to be able to have the dutch projects and organisations from the European site rendered to a already existing wordpress website.  
+The code written in this repository makes this happen. It consists of 2 scripts that make simple API calls and render a HTML Template. 
 
-Due to time constraints we opted to make the import of the API data as simple as possible (althoug somewhat hacky) This is why we make use of 2 plugins: 
+Due to time constraints we opted to make the import of the API data as simple as possible (although somewhat hacky). This is why we make use of 2 plugins: 
 - XYZ PHP Code: So we can write simple parsing logic
 - WPGetAPI: A plugin for calling external API's. 
 
-In the future it is possible that the project moves away from wordpress and adopts a Django driven website instead. This is why it was decided not to invest in building a dedicated plugin. 
+The project needed to be completed in < 4 weeks while considering that it's a future wish to away from wordpress and adopts a Django driven website instead (see other repository). This is why it was decided not to invest in building a dedicated plugin or explore more advanced alterantives. Again picking the simplest (but not most elegant) option to fetch the data. 
 
 # How the implementation works: 
-- The GET request fetches data from the extneral API using a plugin called WPGetAPI
-- The PHP parsing code processes the data we received and removes unwanted characters using a PHP injection plugin called XYZ PHP Code
-- The PHP parsing also creates a 'card row' in the HTML for every received item.
+- A GET request fetches data from the extneral API using a plugin called WPGetAPI
+- The PHP parsing code processes the data we received and turns it into an array of objects (each object being an organisation or project)
+- The PHP parsing creates a 'card row' in the HTML for every received object. It also removes unwanted characters from the response. As some HTML tags were present in the results. 
 - The PHP script is embedded into wordpress using shortcodes. Basically there where you paste the shortcode, Wordpress will put the fetched data. This makes it easy to move the data around by non-developers
 - We have this implementation 1x for projets, and 1x for organisations. Although they are styled slightly differently. 
 
@@ -29,7 +29,7 @@ This plugin contains all the information to make calls to the external server.
 - Create a new endpoint called projects
 - method: GET
 - Results format PHP Array Data
-- query string: name: "country", value: NL  (This ensures we just get dutch projects)
+- query string: name: "country", value: NL  (This ensures we just get dutch projects, leave empty or change for other results). 
 - no encoding
 - Make another endpoint with the same settings only change unique ID and endpoint to 'organisations'. 
 - Save everything
@@ -113,4 +113,6 @@ Finding the wordpress shortcodes for those snippets
  Adding the snippet to your page
  ![Schermafbeelding 2022-11-12 om 15 37 09](https://user-images.githubusercontent.com/71013416/201479889-8d8d91d8-fc7a-48e4-9845-3b83e32c9860.png)
 
+Renders the items to the page in the same styling as the wordpress theme: 
+![Schermafbeelding 2022-11-12 om 16 06 00](https://user-images.githubusercontent.com/71013416/201480537-18ccd334-3d12-44ce-b7d0-b75cb71335f3.png)
 
