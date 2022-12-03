@@ -81,7 +81,7 @@ div.card-image img {
 
         // loop through each item in the results array
         foreach ( $data as $i => $item ) : ?>
-<a href="https://eu-citizen.science/organisation/<?php esc_html_e(  $item['id']); ?>">
+<a href="https://eu-citizen.science/organisation/<?php esc_html_e(  $item['id']); ?>"target="_blank">
 <div class="card-container">
   <div class="float-layout">
     <div class="card-image">
