@@ -14,9 +14,6 @@ $data = wpgetapi_endpoint( 'eu_citizen_science', 'projects', array('debug' => fa
 <h1 style="text-align: left;">
     <?php esc_html_e(  $item['name']); ?>
   </h1>
-  <h5 style="text-align: left;">
-    <?php esc_html_e(  strip_tags ($item['aim'])); ?>
-  </h5>
   <br>
   <table >
     <tr>
@@ -35,7 +32,6 @@ $data = wpgetapi_endpoint( 'eu_citizen_science', 'projects', array('debug' => fa
       </td>
     </tr>
   </table>
-</body>
       
         <?php endforeach;
 
